@@ -1,0 +1,28 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Balaji 
+{
+	public static void main(String ar[])
+	{
+		Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt(),count=0;
+        int k=a;
+        for(int i=0;i<k;i++)
+        {
+        	for(int j=0;j<k;j++)
+        	{
+        		System.out.print(a);
+        		if(i>0&&count<i)
+        		{
+        			a--;
+        			count++;
+        		}
+        	}
+        	count=0;
+        	System.out.println();
+        	a=k;
+        }
+		
+	}
+}
